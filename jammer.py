@@ -2,7 +2,7 @@
 ###################################################################
 #
 #                      Python Wifi Jammer
-#               By Mohammad Askar @mohammadaskar2
+#                       @mohammadaskar2
 #                    http://www.isecur1ty.org
 #
 ###################################################################
