@@ -8,7 +8,7 @@
 ###################################################################
 from scapy.all import *
 from wifi import Cell
-import time,thread
+import time
 import wireless
 
 wifi1 = wireless.Wireless()
@@ -44,4 +44,3 @@ while True:
  for item in bssid: 
   print "Jamming on : {0}".format(item)
   jam(item)
-  #thread.start_new_thread(jam,(item,))
